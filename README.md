@@ -29,3 +29,7 @@ http://junorayleigh.shinyapps.io/RegressionBoxPlotMPG
 Please login to Shinyapp to see the app. Some browser settings will automatically go into https mode, and render the app non-functional.
 
 ### Presentation link
+http://rpubs.com/juno/RegressionBoxPlotMPG
+
+if the slides fail to load, please refer to source code
+https://github.com/TANJH1/D2P/blob/master/mydeck/index.html

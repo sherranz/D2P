@@ -1,14 +1,22 @@
 ---
-title       : mtcars Regression Analysis
-subtitle    : A Developing Data Products Project
-author      : Juno
-job         : 
-framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
-highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : tomorrow      # 
-widgets     : []            # {mathjax, quiz, bootstrap}
-mode        : selfcontained # {standalone, draft}
-knit        : slidify::knit2slides
+title: "mtcars Regression Analysis"
+author: "Juno"
+framework: io2012
+output: pdf_document
+hitheme: tomorrow
+job: null
+knit: slidify::knit2slides
+mode: selfcontained
+highlighter: highlight.js
+subtitle: A Developing Data Products Project
+ext_widgets:
+  rCharts:
+  - libraries/nvd3
+  - libraries/morris
+  - libraries/polycharts
+widgets:
+- bootstrap
+- interactive
 ---
 ## Objective
 
@@ -65,3 +73,4 @@ http://junorayleigh.shinyapps.io/RegressionBoxPlotMPG
 Please login to Shinyapp to see the app. Some browser settings will automatically go into https mode, and render the app non-functional.
 
 ### Presentation link
+http://rpubs.com/juno/RegressionBoxPlotMPG
