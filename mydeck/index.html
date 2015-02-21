@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>mtcars Regression Analysis</title>
+  <meta charset="utf-8">
+  <meta name="description" content="mtcars Regression Analysis">
+  <meta name="author" content="Juno">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>mtcars Regression Analysis</h1>
+    <h2>A Developing Data Products Project</h2>
+    <p>Juno<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Objective</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>The <code>objective</code> of this presentation is to showcase the use of Shiny on the day-to-day analysis of data. Shiny allows the ease of data analysis using R capabilities for users who are not data scientists. </p></li>
+<li><p>This is a simple yet powerful tool to present data and predict possible outcomes, in a web-based interactive environment. </p></li>
+<li><p>The dataset used would be <code>mtcars</code> that was used during the course <code>Regression Models</code>.</p></li>
+<li><p>The Shiny app developed was to show how simple it is to create simple regression analysis tool, coupled with boxplot, and allow users to study the relationship of different variables on <code>mpg</code>.</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Introduction to mtcars dataset</h2>
+  </hgroup>
+  <article data-timings="">
+    <h6>Description</h6>
+
+<p>The data was extracted from the 1974 Motor Trend US magazine, and comprises fuel consumption and 10 aspects of automobile design and performance for 32 automobiles (1973-74 models).</p>
+
+<h6>Format</h6>
+
+<p>A data frame with 32 observations on 11 variables.</p>
+
+<pre><code class="r">head(mtcars,2)
+</code></pre>
+
+<pre><code>##               mpg cyl disp  hp drat    wt  qsec vs am gear carb
+## Mazda RX4      21   6  160 110  3.9 2.620 16.46  0  1    4    4
+## Mazda RX4 Wag  21   6  160 110  3.9 2.875 17.02  0  1    4    4
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>The Shiny App</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>The Shiny app has two panels, a main panel to display the graphs and a side panel that allow users to select for the variables to be compared to <code>mpg</code>.</p></li>
+<li><p>It also have <code>regression analysis</code> and <code>box plot</code> tabs for users to see the data behaviour.
+<img src="https://raw.githubusercontent.com/TANJH1/D2P/master/images/screenshot.png" alt="screenshot"></p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Links</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Github repository</h3>
+
+<p><a href="https://github.com/TANJH1/D2P">https://github.com/TANJH1/D2P</a></p>
+
+<h3>Shiny App Link</h3>
+
+<p><a href="http://junorayleigh.shinyapps.io/RegressionBoxPlotMPG">http://junorayleigh.shinyapps.io/RegressionBoxPlotMPG</a></p>
+
+<p>Please login to Shinyapp to see the app. Some browser settings will automatically go into https mode, and render the app non-functional.</p>
+
+<h3>Presentation link</h3>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Objective'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Introduction to mtcars dataset'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='The Shiny App'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Links'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
